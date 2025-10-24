@@ -23,7 +23,7 @@ This is one of student projects, that is supposed to help acquire knowledge of A
 ### Clone repository
 1. Open your powershell and clone repository:
     ```
-      git clone https://github.com/AveePB/TSR.git
+    git clone https://github.com/AveePB/TSR.git
     ```
 ### Upload code to arduino
 1. Open your Arduino IDE and set device as Arduino UNO and COM port,
@@ -33,11 +33,11 @@ This is one of student projects, that is supposed to help acquire knowledge of A
 ### Set up raspberry pi
 1. Open your powershell and clone repository:
     ```
-      git clone https://github.com/AveePB/Maze.git
+    git clone https://github.com/AveePB/Maze.git
     ```
 2. Open the project folder and create virtual environment:
     ```
-      python -m venv env
+    python -m venv env
     ```
 3. Activate your python environment:
     ```
