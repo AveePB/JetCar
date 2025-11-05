@@ -76,5 +76,4 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 ## Literature
 List of sources:
-- <a href="https://freertos.org/Documentation/02-Kernel/07-Books-and-manual/01-RTOS_book">FreeRTOS Documentation</a>,
 - <a href="https://docs.ultralytics.com/">Yolo Documentation</a>
