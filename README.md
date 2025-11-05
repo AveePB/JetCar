@@ -5,35 +5,24 @@ TSR is a technology by which a vehicle is able to recognize the traffic signs pu
 - [Introduction](#introduction)
 - [Installation](#installation)
 - [How does TSR work?](#how-does-tsr-work)
-- [Application of TSR](#application-of-tsr)
+- [Line detection](#line-detection)
 - [License](#license)
 - [Literature](#literature)
 
 ## Introduction
 <p align="center">
-    <img src="./assets/img/arduino-ide.png" alt="FreeRTOS logo" width="12%"/>
-    <img src="./assets/img/freertos.png" alt="FreeRTOS logo" width="30%"/>
+    <img src="./assets/img/vscode.png" alt="VS code logo" width="12%"/>
+    <img src="./assets/img/ros.png" alt="ROS logo" width="30%"/>
     <img src="./assets/img/yolo.png" alt="Yolo logo" width="25%"/>
 </p>
 
-This is one of student projects, that is supposed to help acquire knowledge of AI, embedded systems and 3D printing. We have used many frameworks including FreeRTOS and Yolo. This project is supposed to learn more about autonomous vehicles and its design. The goal is to equip line follower with TSR and maximize its reactions to the traffic signs.
+This is one of student projects, that is supposed to help acquire knowledge of AI, embedded systems and 3D printing. We have used many frameworks including ROS and Yolo. This project is supposed to learn more about autonomous vehicles and its design. The goal is to equip line follower with TSR and maximize its reactions to the traffic signs.
 
 ## Installation
 
-### Clone repository
 1. Open your powershell and clone repository:
     ```
     git clone https://github.com/AveePB/TSR.git
-    ```
-### Upload code to arduino
-1. Open your Arduino IDE and set device as Arduino UNO and COM port,
-2. Try to verify your code and download needed libraries,
-3. Click upload button to complete task.
-
-### Set up raspberry pi
-1. Open your powershell and clone repository:
-    ```
-    git clone https://github.com/AveePB/Maze.git
     ```
 2. Open the project folder and create virtual environment:
     ```
@@ -70,10 +59,9 @@ Objects detected by the camera are assigned one of the lables:
  - **D-6**: Zebra crossing in a few meters,
  - **None**: Object was not recognized as one of the traffic signs. 
 
+## Line detection
 
-## Application of TSR
-
-### Line follower
+### Logic
 ...
 
 ### Assembly
