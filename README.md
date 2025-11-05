@@ -1,10 +1,12 @@
 # Line Follower
+It's a robot that has simple task to follow the line while charging forward.
 
 ## Table of contents
 - [Introduction](#introduction)
 - [Installation](#installation)
-- [Traffic sign recognition](#traffic-sign-recognition)
 - [Line detection](#line-detection)
+- [Traffic sign recognition](#traffic-sign-recognition)
+- [Assembly](#assembly)
 - [License](#license)
 - [Literature](#literature)
 
@@ -16,8 +18,6 @@
 </p>
 
 This is one of student projects, that is supposed to help acquire knowledge of AI, embedded systems and 3D printing. We have used many frameworks including ROS and Yolo. This project is supposed to learn more about autonomous vehicles and its design. The goal is to equip line follower with TSR and maximize its reactions to the traffic signs.
-
-
 
 ## Installation
 
@@ -42,6 +42,9 @@ This is one of student projects, that is supposed to help acquire knowledge of A
     cd robot
     python main.py
     ```
+## Line detection
+...
+
 ## Traffic sign recognition
 TSR is a technology by which a vehicle is able to recognize the traffic signs put on the road, such as speed limits, stop signs and other warnings. The system then provides this information to the driver, typically through the display.
 
@@ -61,12 +64,8 @@ Objects detected by the camera are assigned one of the lables:
  - **D-6**: Zebra crossing in a few meters,
  - **None**: Object was not recognized as one of the traffic signs. 
 
-## Line detection
 
-### Logic
-...
-
-### Assembly
+## Assembly
 ...
 
 ## License
