@@ -1,5 +1,4 @@
-# TSR (Traffic Signs Recognition)
-TSR is a technology by which a vehicle is able to recognize the traffic signs put on the road, such as speed limits, stop signs and other warnings. The system then provides this information to the driver, typically through the display.
+# Line Follower
 
 ## Table of contents
 - [Introduction](#introduction)
@@ -17,6 +16,8 @@ TSR is a technology by which a vehicle is able to recognize the traffic signs pu
 </p>
 
 This is one of student projects, that is supposed to help acquire knowledge of AI, embedded systems and 3D printing. We have used many frameworks including ROS and Yolo. This project is supposed to learn more about autonomous vehicles and its design. The goal is to equip line follower with TSR and maximize its reactions to the traffic signs.
+
+
 
 ## Installation
 
@@ -42,7 +43,7 @@ This is one of student projects, that is supposed to help acquire knowledge of A
     python main.py
     ```
 ## Traffic sign recognition
-...
+TSR is a technology by which a vehicle is able to recognize the traffic signs put on the road, such as speed limits, stop signs and other warnings. The system then provides this information to the driver, typically through the display.
 
 ### Camera input
 ...
