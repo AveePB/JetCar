@@ -23,7 +23,7 @@ This is one of student projects, that is supposed to help acquire knowledge of A
 
 1. Open your powershell and clone repository:
     ```
-    git clone https://github.com/AveePB/TSR.git
+    git clone https://github.com/AveePB/LineFollower.git
     ```
 2. Open the project folder and create virtual environment:
     ```
