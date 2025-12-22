@@ -1,79 +1,64 @@
-# Line Follower
-It's a robot that has simple task to follow the line while charging forward.
+# JetCar
+> 21/12/2025 - Car uses nvidia jetpack 5.1 and ros2 humble. This repository is a practical use of machine learning technologies.
 
-## Table of contents
-- [Introduction](#introduction)
-- [Installation](#installation)
-- [Line detection](#line-detection)
-- [Traffic sign recognition](#traffic-sign-recognition)
-- [Assembly](#assembly)
-- [License](#license)
-- [Literature](#literature)
-
-## Introduction
 <p align="center">
-    <img src="./assets/img/ros.png" alt="ROS logo" width="15%"/>
-    <img src="./assets/img/vscode.png" alt="VS code logo" width="12%"/>
-    <img src="./assets/img/yolo.png" alt="Yolo logo" width="25%"/>
+    <img src="./assets/png/car-preview.png" width="600" alt="JetCar image">
 </p>
 
-This is one of student projects, that is supposed to help acquire knowledge of AI, embedded systems and 3D printing. We have used many frameworks including ROS and Yolo. This project is supposed to learn more about autonomous vehicles and its design. The goal is to equip line follower with TSR and maximize its reactions to the traffic signs.
+JetCar is an autonomous AI car using NVIDIA Jetson Orion. This car allows you:
+- Experience Edge AI - see how ML models are implemented in daily scenarios;
+- Have fun - play around with multiple applications and functionalities of the car;
 
-## Installation
+Build JetCar to spend time with your family or friends. It's a great way to expand your knowledge and skill set. 
 
-1. Open your powershell and clone repository:
-    ```
-    git clone https://github.com/AveePB/LineFollower.git
-    ```
-2. Open the project folder and create virtual environment:
-    ```
-    python -m venv env
-    ```
-3. Activate your python environment:
-    ```
-    ./env/bin/activate
-    ```
-4. Download required libraries from the txt file:
-    ```
-    pip install -r requirements.txt
-    ```
-5. Change directory
-    ```
-    cd robot
-    ```
-6. Run the python file
-    ```
-    python main.py
-    ```
-## Line detection
-...
-
-## Traffic sign recognition
-TSR is a technology by which a vehicle is able to recognize the traffic signs put on the road, such as speed limits, stop signs and other warnings. The system then provides this information to the driver, typically through the display.
-
-### Camera input
-...
-
-### Sign detection 
-...
-
-### Sign classification
-<img src="./assets/img/traffic-signs.png" width=600/>
-
-Objects detected by the camera are assigned one of the lables:
- - **B-20**: Stop sign,
- - **B-33**: Start of speed limit,
- - **B-34**: End of speed limit,
- - **D-6**: Zebra crossing in a few meters,
- - **None**: Object was not recognized as one of the traffic signs. 
+## Table of contents
+- [Assembly](#assembly)
+- [Installation](#installation)
+- [Examples](#examples)
+- [License](#license)
 
 
 ## Assembly
+Assembling the JetCar involves certain tools and skills. In the table below you see the tools and skills needed to use them:
+
+
+| Id | Tool name                     | Description                                                                 | Image / Reference |
+|----|-------------------------------|-----------------------------------------------------------------------------|-------------------|
+| 1  | Original Prusa i3 MK3S 3D Printer | Fabricate mechanical parts and structural components                        | <p align="center"><img src="./assets/png/original-prusa-i3-mk3s-3d-printer.png" width="100"></p> |
+| 2  | Soldering Station              | Solder electrical connections for sensors, power systems, and Jetson Orin    | <p align="center"><img src="./assets/png/soldering-station.png" width="100"></p> |
+| 3  | Multimeter                     | Measure voltage, continuity, and current for debugging and validation       | <p align="center"><img src="./assets/png/multimeter.png" width="100"></p> |
+| 4  | Screwdriver Set                | Assemble mechanical components and mount electronics                         | <p align="center"><img src="./assets/png/screwdriver.png" width="100"></p> |
+| 5  | Computer                       | Configure OS, install drivers, deploy software, and run tests   | <p align="center"><img src="./assets/png/computer.png" width="100"></p> |
+
+
+The instructions is devided into two parts:
+1. <a href="./assets/md/chassis-assembly.md">Chassis assembly</a>: build a solid foundation that supports all mechanical components and ensures stability, durability, and precise control of the car. This stage includes mounting the arduino nano, step-down voltage regulator, and servo.
+
+2. <a href="./assets/md/body-assembly.md">Body</a>: install the body shell onto the chassis and mount all electronic components, including sensors and the NVIDIA Jetson Orin. This step enables perception, computation, and interaction with the environment, allowing the car to execute programmed behaviors.
+
+## Installation
+Setting up software involves two major steps. One is uploading the chassis control sketch to arduino and the second is cloning the repository onto the jetson.
+
+### Arduino nano
+...
+
+### Jetson orion nano
+...
+
+## Examples
+In the ```jetcar``` directory there are multiple examples of applications that use magical power of machine learning and computer vision. Checkout them:
+
+### SLAM (Simultaneous localization and mapping)
+...
+
+### Object Follower (Convolutional neural network)
+...
+
+### Line Follower (Computer vision) 
+...
+
+### TSR (Traffic sign recognition)
 ...
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.
-
-## Literature
-List of sources:
-- <a href="https://docs.ultralytics.com/">Yolo Documentation</a>
