@@ -2,8 +2,8 @@
 #include <Servo.h>
 
 // Steering pin
-#define STEERING_PIN A7
-#define MIN_RANGE 80
+#define STEERING_PIN 11
+#define MIN_RANGE 60
 #define MAX_RANGE 120
 
 // Create objects

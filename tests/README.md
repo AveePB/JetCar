@@ -9,4 +9,4 @@ This sketch uses Servo.h arduino library to control servo motor that is responsi
 </p>
 
 > The goal of this test was to determine the optimal steering range for the car. We don't want it to break steering mechanism! 
-> The steering wheel range is from 80 to 120 degrees, 100 degree sets wheels straight.
+> The steering wheel range is from 60 to 120 degrees, 90 degree sets wheels straight.
